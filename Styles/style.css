@@ -155,3 +155,44 @@ hr{
 i.far{
     color: #FF4A60;
 }
+/* Responsive layout */
+@media only screen and (max-width:688px) {
+    header{
+        background-color: red;
+    }
+    .nav-bar{
+        font-size: 14px;
+    }
+    /* top players */
+    .top-section{
+        width: 100%;
+        padding-right: 30px;
+    }
+    .players-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player-container{
+        display: flex;
+        align-items: center;
+    }
+    .player-box{
+        display: flex;
+        flex-direction: column;
+    }
+    /* top blog */
+    .blog-container{
+        align-items:center;
+    }
+    .blogs-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* course section */
+    .course-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course-img{
+        width: 100%;
+        height: auto;
+    }
+}
